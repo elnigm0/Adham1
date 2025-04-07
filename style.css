@@ -1,0 +1,233 @@
+* {
+   padding: 0;
+   margin: 0; 
+}
+body {
+    background-image: url('../background.jpg');
+    width:100% ;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* Start contact */
+.cards contact {
+    width: 100%;
+    height: calc(100vh - 20px);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: calc(100vh - 30px);
+    background-size: cover;
+    align-items: center;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+    margin-top: -80px;
+}
+.card{
+    background-color: transparent;
+    width: 21.25em;
+    box-shadow: 0 5px 25px #8098ff;
+    border-radius: 10px;
+    padding:25px ;
+    margin: 15px;
+    transition: 1.7s ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.icon {
+    font-size: 8em;
+    text-align: center;
+    
+}
+
+.info{
+    text-align: center;
+}
+.info h3{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+.info p {
+    color: #3bff00;
+}
+.content .card {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.contact .icon{
+
+    font-size: 4.5em;
+}
+
+.contact .info h3{
+    
+    color: #d76c74;
+    
+}
+
+.contact .info p {
+     font-size: 10px ;
+    color: #fff;
+}
+.phone-icon {
+    color: #40e0ff;
+}
+.email-icon {
+    color: #006cff;
+}
+
+/* Icon */
+/***** تنسيق السكشن الرئيسي *****/
+.cards.contact {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.cards.contact .title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #333;
+}
+
+/***** تنسيق عام للبطاقات *****/
+.social-card {
+  width: 100%;
+  display: flex;               /* ترتيب أفقي للأيقونة والنص */
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 15px;         /* زوايا منحنية */
+  color: #fff;                 /* لون النص */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);  /* ظل */
+  padding: 20px;               /* مسافة داخلية */
+  box-sizing: border-box;
+}
+
+/***** أيقونة كل بطاقة *****/
+.social-icon {
+  width: 70px;                 /* عرض مربع الأيقونة */
+  height: 70px;
+  min-width: 70px;             /* لكي لا ينكمش في الشاشات الصغيرة */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;             /* حجم الأيقونة */
+  border-radius: 10px;         /* زوايا منحنية حول الأيقونة */
+  margin-left: 20px;           /* مسافة بين الأيقونة والنص (في الاتجاه RTL يمكن استعمال margin-right) */
+}
+
+/***** النص داخل البطاقة *****/
+.social-text {
+  flex: 1;                     /* كي يأخذ بقية المساحة */
+  padding: 0 10px;             /* مسافة أفقية بسيطة حول النص */
+}
+
+.social-text h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #fff;
+}
+.social-text a {
+    color: #00d5ff;
+}
+.social-text p {
+  margin: 0;
+  font-size: 15px;
+  color: #f0f0f0;
+}
+
+/***** بطاقة فيسبوك *****/
+.facebook-card {
+  /* تدرّج ألوان من الأزرق الغامق إلى درجة أخرى */
+  background: linear-gradient(to right, #3b5998, #2d4373);
+}
+
+.facebook-card .social-icon {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+/***** threads-card *****/
+.threads-card {
+  background: linear-gradient(to right, #222, #111);
+}
+
+.threads-card .social-icon {
+  background-color: #000;
+  color: #fff;
+  font-size: 7px;
+}
+
+/***** tiktok-card *****/
+.tiktok-card {
+  background: linear-gradient(to right, #222, #111);
+}
+
+.tiktok-card .social-icon {
+  background-color: #000;
+  color: #fff;
+}
+
+/***** WhatsApp *****/
+.whatsapp-card {
+  background: linear-gradient(to right, #25d366, #128c7e);
+}
+
+.whatsapp-card .social-icon {
+  background-color: #25d366;
+  color: #fff;
+}
+
+/***** Instagram card *****/
+.instagram-card {
+  background: linear-gradient(to right, #ff7300,#5000ff);
+}
+
+.instagram-card .social-icon {
+  background: linear-gradient(to right, #ff7300,#5000ff);
+  color: #fff;
+}
+
+
+/***** snapcha-card *****/
+.snapcha-card {
+  background: linear-gradient(to right, #fff100,#c3b800);
+}
+
+.snapcha-card .social-icon {
+  background-color: #fff100;
+  color: #fff;
+}
+
+
+
+/***** phone card *****/
+.phone-card {
+  background: linear-gradient(to right, #fff100,#c3b800);
+}
+
+.phone-card .social-icon {
+  background-color: #fff100;
+  color: #fff;
+}
+
